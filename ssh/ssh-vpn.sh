@@ -89,7 +89,7 @@ apt-get install ruby -y
 gem install lolcat
 
 # set time GMT +7
-ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
@@ -273,14 +273,14 @@ netfilter-persistent save
 netfilter-persistent reload
 
 # Banner /etc/issue.net
-rm -fr /etc/issue.net
-rm -fr /etc/issue.net.save
-sleep 1
-echo -e "[ ${green}INFO$NC ] Settings banner"
-wget -q -O /etc/issue.net "https://raw.githubusercontent.com/Zeadxt/v/main/issue.net"
-chmod +x /etc/issue.net
-echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
-sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
+#rm -fr /etc/issue.net
+#rm -fr /etc/issue.net.save
+#sleep 1
+#echo -e "[ ${green}INFO$NC ] Settings banner"
+#wget -q -O /etc/issue.net "https://raw.githubusercontent.com/Zeadxt/v/main/issue.net"
+#chmod +x /etc/issue.net
+#echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
+#sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 # download script
 cd /usr/bin
