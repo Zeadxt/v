@@ -17,9 +17,9 @@ source /etc/os-release
 ver=$VERSION_ID
 
 #detail nama perusahaan
-country=MY
-state=Malaysia
-locality=Kuala_Lumpur
+country=Id
+state=Indonesia
+locality=Jakarta
 organization=none
 organizationalunit=none
 commonname=none
