@@ -69,7 +69,7 @@ cpu_usage+=" %"
 ISP=$(curl -s ipinfo.io/org?token=2e48a6d62556ca | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city?token=2e48a6d62556ca )
 WKT=$(curl -s ipinfo.io/timezone?token=2e48a6d62556ca )
-os=$(curl-s "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`)
+#os=$(curl-s "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`)
 DAY=$(date +%A)
 DATE=$(date +%m/%d/%Y)
 DATE2=$(date -R | cut -d " " -f -5)
@@ -89,7 +89,6 @@ echo -e "${BICyan} ⇲  ${BICyan}SCRIPT BY       :  ${Yellow}FREE TUNNELING PROJ
 echo -e "${BICyan} ⇲  ${BICyan}Current Domain  :  ${Yellow}$domain${NC}" 
 echo -e "${BICyan} ⇲  ${BICyan}IP-VPS          :  ${Yellow}$IPVPS${NC}"                  
 echo -e "${BICyan} ⇲  ${BICyan}ISP-VPS         :  ${Yellow}$ISP${NC}"
-echo -e "${BICyan} ⇲  ${BICyan}OS-VPS          :  ${Yellow}$os${NC}"
 echo -e "${BICyan} ⇲  ${BICyan}DATE&TIME       :  ${Yellow}$( date -d "0 days" +"%d-%m-%Y | %X" ) ${NC}"                              
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ MENU SERVICE ⇲                         \E[0m"
